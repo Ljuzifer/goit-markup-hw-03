@@ -95,12 +95,13 @@ color: var(--accent-color);
 
 .hero {
   background-color: var(--secondary-background-color);
+  text-align: center;
 }
 
-.hero .block-title {
+.hero .section-title {
   margin: 0 auto;
   padding-top: 188px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   color: var(--hero-text-color);
   width: 494px;
 
@@ -108,13 +109,14 @@ color: var(--accent-color);
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
+  /* position: absolute; */
 }
 
 .push {
-  /* display: inline-block; */
+  display: inline-block;
   border-radius: 4px;
   margin-bottom: 188px;
-  margin-left: 495px;
+  /* margin-left: 495px; */
   padding: 16px 32px;
   gap: 10px;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
@@ -140,23 +142,37 @@ color: var(--accent-color);
 
 /* main */
 
+ul {
+  padding: 0;
+}
+
+.item-description {
+  margin: 0;
+  width: 264px;
+  /* padding: 0 15px; */
+}
+
 .tint {
   background-color: var(--header-background-color);
 }
 
-.block-title,
-.block-item {
+.section-title,
+.section-item {
   color: var(--title-text-color);
 }
 
-.block-title {
+.section-title {
+  margin-top: 0;
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
 }
 
-.block-item {
+.section-item {
+  margin-top: 0;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -165,6 +181,7 @@ color: var(--accent-color);
 /* footer */
 
 footer {
+  /* padding: 100px auto 100px 15px; */
   background-color: var(--secondary-background-color);
   color: var(--footer-text-color);
 }
