@@ -14,6 +14,7 @@
 /* body */
 
 body {
+  margin: 0;
   background-color: var(--primary-background-color);
   color: var(--main-text-color);
 
@@ -98,6 +99,8 @@ color: var(--accent-color);
 
 .hero .block-title {
   margin: 0 auto;
+  padding-top: 188px;
+  padding-bottom: 48px;
   color: var(--hero-text-color);
   width: 494px;
 
@@ -108,6 +111,16 @@ color: var(--accent-color);
 }
 
 .push {
+  /* display: inline-block; */
+  border-radius: 4px;
+  margin-bottom: 188px;
+  margin-left: 495px;
+  padding: 16px 32px;
+  gap: 10px;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  min-width: 169px;
+  border: transparent;
+
   background-color: var(--logo-part-color);
   color: var(--hero-text-color);
   cursor: pointer;
@@ -122,7 +135,7 @@ color: var(--accent-color);
 
 .push:hover,
 .push:focus {
-  color: var(--main-text-color);
+  background-color: var(--accent-color);
 }
 
 /* main */
@@ -141,7 +154,6 @@ color: var(--accent-color);
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  text-transform: capitalize;
 }
 
 .block-item {
