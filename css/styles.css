@@ -113,12 +113,12 @@ color: var(--accent-color);
 }
 
 .push {
-  display: inline-block;
+  /* display: inline-block; */
   border-radius: 4px;
   margin-bottom: 188px;
   /* margin-left: 495px; */
   padding: 16px 32px;
-  gap: 10px;
+  /* gap: 10px; */
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   min-width: 169px;
   border: transparent;
@@ -142,13 +142,23 @@ color: var(--accent-color);
 
 /* main */
 
+.tint .container,
+.odds .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.work .container {
+  padding-bottom: 120px;
+}
+
 ul {
   padding: 0;
 }
 
 .item-description {
   margin: 0;
-  width: 264px;
+  /* width: 264px; */
   /* padding: 0 15px; */
 }
 
@@ -186,13 +196,39 @@ footer {
   color: var(--footer-text-color);
 }
 
+.foot .container {
+  padding-left: 15px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .foot-part {
   color: var(--footer-logo-part);
+}
+
+.foot .item-description {
+width: 264px;
+}
+
+/* Portfolio */
+
+.options .container {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.btn-list {
+  margin-bottom: 72px;
 }
 
 /* Portfolio's buttons */
 
 .btn-push {
+  border-radius: 4px;
+  padding: 12px 24px;
+  min-width: 69px;
+  border: transparent;
+
   background-color: var(--footer-logo-part);
   color: var(--logo-part-color);
   cursor: pointer;
