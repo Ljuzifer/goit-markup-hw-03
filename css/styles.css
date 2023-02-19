@@ -32,6 +32,10 @@ body {
 
   outline: 2px solid green;
 }
+.logo,
+.chapter {
+  outline: 1px solid red;
+}
 
 .list {
   list-style: none;
@@ -119,11 +123,6 @@ color: var(--accent-color);
   display: block;
 }
 
-.site-nav .chapter,
-.address-nav .chapter {
-  outline: 1px solid red;
-}
-
 .head-nav {
   display: flex;
   align-items: center;
@@ -154,16 +153,12 @@ color: var(--accent-color);
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  /* position: absolute; */
 }
 
 .push {
-  /* display: inline-block; */
   border-radius: 4px;
   margin-bottom: 188px;
-  /* margin-left: 495px; */
   padding: 16px 32px;
-  /* gap: 10px; */
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   min-width: 169px;
   border: transparent;
@@ -176,7 +171,7 @@ color: var(--accent-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
+  text-align: center;
   letter-spacing: 0.04em;
 }
 
@@ -187,6 +182,13 @@ color: var(--accent-color);
 
 /* main */
 
+img {
+  display: block;
+}
+
+ul {
+  padding: 0;
+}
 .tint .container,
 .odds .container {
   padding-top: 120px;
@@ -197,18 +199,8 @@ color: var(--accent-color);
   padding-bottom: 120px;
 }
 
-img {
-  display: block;
-}
-
-ul {
-  padding: 0;
-}
-
 .item-description {
   margin: 0;
-  /* width: 264px; */
-  /* padding: 0 15px; */
 }
 
 .tint {
@@ -236,6 +228,58 @@ ul {
   font-size: 20px;
   line-height: 1.2;
 }
+
+/* Advantages */
+
+.advantages.list {
+  display: flex;
+}
+
+.advantages .chapter:not(:last-child) {
+  margin-right: 24px;
+}
+/* .advantages .chapter + .chapter {
+  margin-left: 24px;
+} */
+
+.advantages .chapter {
+  width: calc((100%-24px*3)/4);
+}
+
+/* Work */
+
+.work-nav.list {
+  display: flex;
+}
+
+.work-nav .chapter:not(:last-child) {
+  margin-right: 24px;
+}
+/* .work-nav .chapter + .chapter {
+  margin-left: 24px;
+} */
+
+/* Team */
+
+.chapter .section-item {
+  margin-top: 32px;
+}
+
+.chapter .item-description {
+  margin-bottom: 32px;
+}
+
+.team-nav.list {
+  display: flex;
+  text-align: center;
+}
+
+.team-nav .chapter:not(:last-child) {
+  margin-right: 24px;
+}
+/* .team-nav .chapter + .chapter {
+  margin-left: 24px;
+} */
 
 /* footer */
 
