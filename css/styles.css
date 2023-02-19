@@ -27,6 +27,8 @@ body {
 .container { 
   width: 1158px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
   outline: 2px solid green;
 }
@@ -38,17 +40,13 @@ body {
 
 /* header */
 
-address,
-nav {
-  padding: 0 15px;
-}
-
 .page-header {
   background-color: var(--primary-background-color);
   border-bottom: 1px solid var(--header-background-color);
 }
 
 .logo {
+  margin-right: 76px;
   color: var(--title-text-color);
 
   font-family: 'Raleway', sans-serif;
@@ -65,6 +63,10 @@ nav {
 }
 
 .site-nav .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -76,6 +78,17 @@ nav {
 .site-nav .link:focus {
 color: var(--accent-color);
 }
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .chapter:not(:last-child) {
+  margin-right: 40px;
+}
+/* .site-nav .chapter+.chapter {
+  margin-left: 40px;
+} */
 
 .ping {
   color: var(--main-text-color);
@@ -89,6 +102,38 @@ color: var(--accent-color);
 .address-nav .ping:hover,
 .address-nav .ping:focus {
   color: var(--accent-color);
+}
+
+.address-nav {
+  display: flex;
+}
+
+.address-nav .chapter+.chapter {
+  margin-left: 40px;
+}
+/* .address-nav .chapter:not(:last-child) {
+  margin-right: 40px;
+} */
+
+.address-nav .ping {
+  display: block;
+}
+
+.site-nav .chapter,
+.address-nav .chapter {
+  outline: 1px solid red;
+}
+
+.head-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container.head-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* main hero */
@@ -150,6 +195,10 @@ color: var(--accent-color);
 
 .work .container {
   padding-bottom: 120px;
+}
+
+img {
+  display: block;
 }
 
 ul {
