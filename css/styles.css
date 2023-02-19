@@ -30,12 +30,12 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
-  /* outline: 2px solid green; */
+  outline: 2px solid green;
 }
-/* .logo,
+.logo,
 .chapter {
   outline: 1px solid red;
-} */
+}
 
 .list {
   list-style: none;
@@ -45,7 +45,6 @@ body {
 /* header */
 
 .page-header {
-  background-color: var(--primary-background-color);
   border-bottom: 1px solid var(--header-background-color);
 }
 
@@ -137,27 +136,38 @@ color: var(--accent-color);
 
 /* main hero */
 
-.hero {
+.section.hero {
+  /* padding: 188px 472px 188px 472px; */
   background-color: var(--secondary-background-color);
+  /* text-align: center; */
+  /* align-items: center; */
+}
+
+.hero .container {
+  padding: 188px 331px;
   text-align: center;
 }
 
-.hero .section-title {
-  margin: 0 auto;
-  padding-top: 188px;
-  margin-bottom: 48px;
+.container .main-title {
+  margin: 0px 0px 48px;
+  text-align: center;
+  
+  /* padding-top: 188px; */
+  /* margin-bottom: 48px; */
   color: var(--hero-text-color);
-  width: 494px;
+  width: 496px;
+
+  
 
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+  letter-spacing: 0.02em;
 }
 
 .push {
   border-radius: 4px;
-  margin-bottom: 188px;
+  margin: 0;
   padding: 16px 32px;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   min-width: 169px;
